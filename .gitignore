@@ -1,0 +1,25 @@
+cat > .gitignore <<'EOF'
+/target/
+Cargo.lock
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# runtime / mounts / logs / data
+/mount_real/
+/mount_smart/
+/run/
+/logs/
+/data/
+/dataset/
+
+# models weights
+/models/
+*.onnx
+*.pt
+*.bin
+EOF
